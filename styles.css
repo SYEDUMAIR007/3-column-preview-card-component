@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+    --brightorange:hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --Verylightgray: hsl(0, 0%, 95%);
+}
+main{
+    margin: 24px;
+    max-width: 100%;
+    min-height: 100vh;
+}
+body,button{
+    background-color: var(--Verylightgray);
+}
+h1{
+    color: var(--Verylightgray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    margin: 40px 0 20px 0;
+}
+p{
+    color: var(--Transparentwhite);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375em;
+    font-weight: 400;
+    line-height: 21px;
+}
+.orange{
+    background-color: var(--brightorange);
+    border-radius: 9px 9px 0 0;
+    padding: 41px;
+}
+.cyan{
+    background-color: var(--Darkcyan);
+    padding: 41px;
+}
+.darkcyan{
+    background-color: var(--Verydarkcyan);
+    padding: 41px;
+    border-radius: 0 0 9px 9px;
+}
+button{
+    height: 48px;
+    width: 146px;
+    border-radius: 39px;
+    margin: 29px 0 5px 0;
+    cursor: pointer;
+    border: 1px solid var(--Verylightgray);
+    
+}
+.orange button{
+    color: var(--brightorange);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375em;
+    font-weight: 400;
+}
+.orange button:active{
+    background-color: var(--brightorange);
+    color: var(--Verylightgray);
+    border: 2px solid var(--Verylightgray);
+}
+.cyan button{
+    color: var(--Darkcyan);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375em;
+    font-weight: 400;
+    
+}
+.cyan button:active{
+    background-color: var(--Darkcyan);
+    color: var(--Verylightgray);
+    border: 2px solid var(--Verylightgray);
+}
+.darkcyan button{
+    color: var(--Verydarkcyan);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375em;
+    font-weight: 400;
+    
+}
+.darkcyan button:active{
+    background-color: var(--Verydarkcyan);
+    color: var(--Verylightgray);
+    border: 2px solid var(--Verylightgray);
+}
+@media(min-width:700px){
+    main{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        place-items: center;
+        place-content: center;
+        margin:0 261px 0 261px ;
+    }
+    .orange{
+        border-radius: 9px 0 0 9px;
+    }
+   
+    .darkcyan{
+        border-radius: 0 9px 9px 0;
+    }
+    button{
+        margin-top: 120px; 
+    }
+
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
